@@ -12,7 +12,7 @@ public class ApiExplorer {
 	
 	ApiExplorer(String areacode, String date) throws IOException {
 		StringBuilder urlBuilder = new StringBuilder("http://openapi.molit.go.kr/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTradeDev"); /*URL*/
-        urlBuilder.append("?" + URLEncoder.encode("ServiceKey","UTF-8") + "=ukQP6Ni3z%2FJXAYZBBPmIfRr1oCaosK1gNjkdWLZ8DiJH6noLfFg3KwIPTEBCFzzpSSlpj93jWpHOa8Dgj1oRxA%3D%3D"); /*Service Key(필수)*/
+        urlBuilder.append("?" + URLEncoder.encode("ServiceKey","UTF-8") + "=서비스키"); /*Service Key(필수)*/
         // urlBuilder.append("&" + URLEncoder.encode("pageNo","UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*페이지번호*/
         // urlBuilder.append("&" + URLEncoder.encode("numOfRows","UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*한 페이지 결과 수*/
         urlBuilder.append("&" + URLEncoder.encode("LAWD_CD","UTF-8") + "=" + URLEncoder.encode(areacode, "UTF-8")); /*지역코드(필수)*/
